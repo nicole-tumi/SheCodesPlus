@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/styles.css" />
+        <title>My Weather Application</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <form id="search-form">
+                    <input
+                        type="search"
+                        placeholder="Enter a city.."
+                        required
+                        class="search-input"
+                        id="search-input"
+                    />
+                    <input type="submit" value="Search" class="search-btn" />
+                </form>
+            </header>
+            <hr />
+            <main>
+                <div class="current-weather">
+                    <div>
+                        <h1 class="city-name" id="city-name">Paris</h1>
+                        <div class="city-info">
+                            <p id="weather-details" class="weather-details">
+                                Saturday 15:32, moderate rain <br />
+                            </p>
+                            <p id="weather-info" class="weather-details">
+                                Humidity: <strong>87%</strong>, Wind:
+                                <strong>7.2km/h</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="current-temp">
+                        <span class="current-temp-icon">☀️</span>
+                        <span class="current-temp-value" id="current-temp-value"
+                            >24</span
+                        >
+                        <span class="current-temp-unit">°C</span>
+                    </div>
+                </div>
+            </main>
+            <hr />
+            <footer>
+                <p>
+                    This project was coded by
+                    <a href="#" target="_blank">Your name</a> and is
+                    <a href="#" target="_blank">on GitHub</a> and
+                    <a href="#" target="_blank">hosted on Netlify</a>
+                </p>
+            </footer>
+        </div>
+        <script src="src/index.js"></script>
+    </body>
+</html>
